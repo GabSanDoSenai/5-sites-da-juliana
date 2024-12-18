@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "MontMedium";
+}
+@font-face {
+    font-family: "MontBoldItalic";
+    src: url(Montserrat/static/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "MontMedium";
+    src: url(Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "MontBold";
+    src: url(Montserrat/static/Montserrat-Bold.ttf);
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6a00;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+}
+h2 {
+    font-size: 120px;
+    color: #E71419;
+    text-align: center;
+}
+h3 {
+    font-size: 36px;
+}
+.marvelEXPLIC {
+    gap: 10px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #810303;
+}
+.marvelEXPLIC p {
+    font-size: 24px;
+}
+.marvel {
+    color: #E71419;
+    font-size: 56px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    padding-left: 50px;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.pesquisa {
+    width: 600px;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 0px 10px;
+}
+.botton {
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
+}
+.botton1 {
+    width: 50px;
+    height: 50px;
+    padding-right: 50px;
+}
+.banner {
+    text-align: center;
+    color: #000;
+}
+
+.banner img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.social-icons img {
+    width: 50px;
+    padding: 20px 0px;
+    margin: 0 10px;
+}
+.social-icons {
+    text-align: center;
+    background-color: #E08C00;
+}
+.produtos {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    background-color: #FF777A;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    background: rgb(129,0,0);
+    background: linear-gradient(0deg, rgba(129,0,0,1) 0%, rgba(255,0,0,1) 100%);
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 0px 10px;
+}
+.card:hover {
+    height: 610px;
+}
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+}
+.card .img-box img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    align-items: center;
+}
+.card:hover .content {
+    top: 370px;
+    height: 350px;
+}
+.card .butão {
+    display: flex;
+    justify-content: center;
+    background: #002df4;
+    font-family: "MontBold";
+    color: white;
+    font-size: 30px;
+    padding: 12px;
+    margin: 0 40px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.butão:hover {
+    background: #0079F4;
+}
+.preco {
+    color: white;
+    font-size: 30px;
+    font-family: "MontBold";
+}
+.textProd {
+    color: white;
+    font-size: 20px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.herois {
+    background-image: url("img/comics/bannerMARVEL.png");
+    height: 800px;
+    background-size: cover;
+}
+
+.imaginar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    text-align: left;
+    padding: 40px 350px;
+    background-color: #ff6a00;
+    color: white;
+}
+.destaques {
+    color: #E71419;
+    background-color: white;
+}
+.slogan {
+    padding-top: 30px;
+    font-size: 54px;
+}

@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: "MontMedium";
+}
+@font-face {
+    font-family: "MontBoldItalic";
+    src: url(Montserrat/static/Montserrat-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "MontMedium";
+    src: url(Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: "MontBold";
+    src: url(Montserrat/static/Montserrat-Bold.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff6a00;
+    color: #fff;
+    align-items: center;
+    padding: 20px;
+}
+h2 {
+    font-size: 120px;
+    color: #E04100;
+    text-align: center;
+    padding-bottom: 10px;
+}
+h3 {
+    font-size: 36px;
+}
+.marvel {
+    color: #E71419;
+    font-size: 56px;
+}
+.dc {
+    color: #0079F4;
+    font-size: 56px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    padding-left: 50px;
+}
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.input-wrapper i{
+    color: #032A91;
+}
+.pesquisa {
+    width: 600px;
+    border-radius: 10px;
+    height: 50px;
+    margin: 10px 0;
+    font-size: 15px;
+    padding: 0px 10px;
+}
+.botton {
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
+}
+.botton1 {
+    width: 50px;
+    height: 50px;
+    padding-right: 50px;
+}
+.banner {
+    text-align: center;
+    color: #000;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.catalogo {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffdec7;
+    padding: 150px 0px;
+}
+
+.catalogo-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.catalogo-item {
+    position: relative;
+    padding-top: 100px;
+    width: 35%;
+    text-align: center;
+}
+
+.catalogo-item:hover {
+    transform: scale(1.2);
+}
+
+.catalogo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.imaginar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    text-align: left;
+    padding: 40px 350px;
+    background-color: #ff6a00;
+    color: white;
+}
+
+.social-icons img {
+    width: 50px;
+    padding: 20px 0px;
+    margin: 0 10px;
+}
+.social-icons {
+    text-align: center;
+    background-color: #E08C00;
+}
+.produtos {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    background-color: #E0914B;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 450px;
+    position: relative;
+    background: rgb(255,192,0);
+    background: linear-gradient(180deg, rgba(255,192,0,1) 0%, rgba(228,85,2,1) 100%);
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 0px 10px;
+}
+.card:hover {
+    height: 610px;
+}
+.card .img-box {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+}
+.card .img-box img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: absolute;
+    top: 380px;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    align-items: center;
+}
+.card:hover .content {
+    top: 370px;
+    height: 350px;
+}
+.card .butão {
+    display: flex;
+    justify-content: center;
+    background: #E71419;
+    font-family: "MontBold";
+    color: white;
+    font-size: 30px;
+    padding: 12px;
+    margin: 0 40px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.butão:hover {
+    background: #0079F4;
+}
+.preco {
+    color: white;
+    font-size: 30px;
+    font-family: "MontBold";
+}
+.textProd {
+    color: white;
+    font-size: 20px;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
