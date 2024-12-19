@@ -4,3 +4,33 @@
     margin: 0;
     text-decoration: none;
 }
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    background-color: #537CFF;
+}
+.banner {
+    background-image: url(img/banner.png);
+    height: 380px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+#start {
+    background-image: url(img/bg1BLOCK.png);
+}
+.friends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    font-size: 24px;
+    color: white;
+}
+.texto h1 {
+    font-size: 64px;
+    padding-bottom: 40px;
+}
