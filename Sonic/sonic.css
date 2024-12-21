@@ -4,13 +4,28 @@
     margin: 0;
     text-decoration: none;
 }
+body {
+    background-color: #FFA50F;
+}
 .cabeca {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    text-align: left;
+    font-size: 48px;
+    gap: 50px;
     color: white;
-    background-color: #537CFF;
+    background-color: #225dff;
+}
+nav {
+    padding: 20px 0px;
+    background-color: #1339b9;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+nav a {
+    font-size: 24px;
+    color: white;
 }
 .banner {
     background-image: url(img/banner.png);
@@ -19,7 +34,7 @@
     background-repeat: no-repeat;
 }
 #start {
-    background-image: url(img/bg1BLOCK.png);
+    background-image: url(img/backgroundSONIC.png);
 }
 .friends {
     display: flex;
@@ -31,6 +46,108 @@
     color: white;
 }
 .texto h1 {
-    font-size: 64px;
+    font-size: 48px;
+    padding-bottom: 30px;
+}
+.texto {
+    padding-left: 50px;
+}
+#Personagem {
+    margin: 5px 0px;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(img/background\ gif.gif);
+    background-size: cover;
+}
+.textBox h1 {
+    color: white;
+    font-size: 96px;
+    text-shadow: 5px 0px 3px #FF0000;
+    text-align: center;
+}
+#curiosidades {
+    background-image: url(img/114795.png);
+    background-size: cover;
+    margin: 5px 0px;
+}
+#ranking {
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(img/green\ hill\ back.jpg);
+    background-size: cover;
+    margin: 5px 0px;
+}
+.char {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(10,124,227,1) 0%, rgba(6,54,166,1) 100%);
+    width: 1000px;
+    height: 500px;
+    border-radius: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+.char img {
+    width: 30%;
+    height: 100%;
+    object-fit: contain;
+}
+.char img:hover {
+    transform: scale(1.4);
+}
+.charText {
+    padding: 0 50px;
+}
+.charText h3 {
+    font-size: 32px;
+    font-weight: bold;
     padding-bottom: 40px;
+    text-align: left;
+}
+.charText p {
+    font-size: 20px;
+}
+.PersonagensALL { 
+    display: flex;
+    padding: 50px;
+}
+.curio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.curio img {
+    width: 500px;
+}
+.curiotext {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.curiotext h3 {
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+.jogo {
+    padding: 70px;
+    display: flex;
+    gap: 30px;
+    color: transparent;
+}
+.jogo:hover {
+    transition: 0.3;
+    color: white;
+}
+.jogo img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.jogo:hover img {
+    transform: scale(1.2);
 }

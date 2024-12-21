@@ -48,6 +48,7 @@ nav a:hover::after{
 }
 .start {
     background-image: url(img/backgrounstart.png);
+    background: cover;
     display: flex;
     align-items: center;
     justify-content: center;
