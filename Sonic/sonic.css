@@ -4,6 +4,21 @@
     margin: 0;
     text-decoration: none;
 }
+@font-face {
+    font-family: "mania";
+    src: url(font/mania/mania.ttf);
+}
+@font-face {
+    font-family: "Mont";
+    src: url(font/Montserrat-VariableFont_wght.ttf)
+}
+p {
+    font: "Mont";
+    font-weight: normal;
+}
+h1,h2,h3 {
+    font-family: "mania";
+}
 body {
     background-color: #FFA50F;
 }
@@ -26,6 +41,7 @@ nav {
 nav a {
     font-size: 24px;
     color: white;
+    font-family: "mania";
 }
 .banner {
     background-image: url(img/banner.png);
@@ -67,9 +83,19 @@ nav a {
     text-align: center;
 }
 #curiosidades {
-    background-image: url(img/114795.png);
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url(img/114795.png);
     background-size: cover;
     margin: 5px 0px;
+}
+#curiosidades h1 {
+    text-shadow: 5px 0px 3px #8400ff;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 72px;
 }
 #ranking {
     background: linear-gradient(
@@ -78,13 +104,19 @@ nav a {
                      url(img/green\ hill\ back.jpg);
     background-size: cover;
     margin: 5px 0px;
+    padding: 50px;
+}
+#ranking h1 {
+    text-shadow: 5px 0px 3px #00eeff;
+    color: white;
+    font-size: 76px;
+    text-align: center;
 }
 .char {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(0deg, rgba(10,124,227,1) 0%, rgba(6,54,166,1) 100%);
     width: 1000px;
     height: 500px;
     border-radius: 50px;
@@ -109,6 +141,8 @@ nav a {
     text-align: left;
 }
 .charText p {
+    font: "Mont";
+    font-weight: Bold;
     font-size: 20px;
 }
 .PersonagensALL { 
@@ -120,34 +154,109 @@ nav a {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    gap: 20px;
 }
 .curio img {
     width: 500px;
 }
 .curiotext {
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     color: white;
+}
+.curiotext a {
+    color: rgb(0, 153, 255);
+    font-size: 32px;
 }
 .curiotext h3 {
     font-size: 48px;
     padding-bottom: 20px;
 }
 .jogo {
-    padding: 70px;
+    padding: 50px 0px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
     color: transparent;
+    gap: 50px;
 }
 .jogo:hover {
-    transition: 0.3;
     color: white;
 }
-.jogo img {
+.gamesRT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+}
+.gamesRT img {
+    width: 150px;
+    height: 150px;
+}
+.capa {
+    border-radius: 20px;
     width: 250px;
     height: 300px;
     object-fit: cover;
+    box-shadow: rgba(0, 119, 255, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-.jogo:hover img {
+.jogo:hover .capa {
+    width: 1000px;
+    border-radius: 10px;
+    transition: 0.3;
     transform: scale(1.2);
 }
+.jogo:hover .explicRANK {
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    visibility: visible;
+}
+.explicRANK {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
+.explicRANK img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #1339b9;
+  }
+  .Sonic {
+    background: rgb(0,99,255);
+background: linear-gradient(180deg, rgba(0,99,255,1) 0%, rgba(0,44,171,1) 100%);
+  }
+  .Tails {
+    background: rgb(255,136,0);
+background: linear-gradient(180deg, rgba(255,136,0,1) 0%, rgba(171,83,0,1) 100%);
+  }
+  .KNUCKLES {
+    background: rgb(255,118,118);
+    background: linear-gradient(0deg, rgba(255,118,118,1) 0%, rgba(136,2,2,1) 100%);
+  }
+  .AMY {
+    background: rgb(255,0,185);
+    background: linear-gradient(180deg, rgba(255,0,185,1) 0%, rgba(255,172,235,1) 100%);
+  }
+  .SHADOW {
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(143,2,2,1) 100%);
+  }
+  .egg {
+    background: rgb(238,4,4);
+background: linear-gradient(0deg, rgba(238,4,4,1) 0%, rgba(143,2,2,1) 100%);
+  }
+
+  .char a {
+    font-size: 32px;
+    color: #d6dfff;
+  }
